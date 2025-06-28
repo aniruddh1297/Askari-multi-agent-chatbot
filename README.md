@@ -127,7 +127,7 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 ## 🐳 Docker Deployment
 
-### 🔧 Build & Run Backend (FastAPI)
+###  Build & Run Backend (FastAPI)
 
 ```bash
 # From project root
@@ -137,11 +137,11 @@ docker build -t askari-backend -f backend/Askari/Dockerfile .
 docker run -d -p 8000:8000 --name askari-backend askari-backend
 ```
 
-📍 Access API at: [http://localhost:8000](http://localhost:8000)
+ Access API at: [http://localhost:8000](http://localhost:8000)
 
 ---
 
-### 🎨 Build & Run Frontend (React/Vite)
+###  Build & Run Frontend (React/Vite)
 
 ```bash
 # Navigate to frontend directory
@@ -154,11 +154,11 @@ docker build -t askari-frontend .
 docker run -d -p 3000:80 --name askari-frontend askari-frontend
 ```
 
-📍 Access UI at: [http://localhost:3000](http://localhost:3000)
+Access UI at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-### 🔐 Environment Variables
+###  Environment Variables
 
 For local development:
 
