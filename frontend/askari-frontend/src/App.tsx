@@ -105,6 +105,7 @@ const App: React.FC = () => {
           >
             <ReactMarkdown
               components={{
+                // @ts-ignore
                 code: ({ node, inline, className, children, ...props }) =>
                   inline ? (
                     <code {...props} className={className}>
