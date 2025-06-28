@@ -1,0 +1,32 @@
+# === Python (Backend) ===
+backend/Askari/__pycache__/
+backend/Askari/.env
+backend/Askari/venv/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# === Node.js (Frontend) ===
+frontend/askari-frontend/node_modules/
+frontend/askari-frontend/.env
+frontend/askari-frontend/dist/
+frontend/askari-frontend/build/
+
+# === System & IDE files ===
+.DS_Store
+*.swp
+*.swo
+*.swn
+.vscode/
+.idea/
+
+# === Logs & output ===
+*.log
+*.out
+*.tmp
+
+# === OS-specific ===
+Thumbs.db
+ehthumbs.db
+desktop.ini

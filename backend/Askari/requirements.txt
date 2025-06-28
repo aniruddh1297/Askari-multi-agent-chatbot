@@ -1,0 +1,20 @@
+# FastAPI app core
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# LLM Orchestration
+langgraph==0.0.41
+langchain==0.1.20
+
+# ✅ OpenRouter works reliably with this OpenAI client version
+openai==0.28
+
+# Required for async LLM calls and environment variables
+httpx==0.25.1
+pydantic==2.6.4
+python-dotenv==1.0.1
+tqdm==4.66.4
+nest-asyncio==1.6.0
+typing-extensions>=4.5.0
+
+langfuse==2.9.1
