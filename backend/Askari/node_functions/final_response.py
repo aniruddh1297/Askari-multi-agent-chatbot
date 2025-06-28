@@ -1,4 +1,4 @@
-from Askari.agent_state import AgentState
+from agent_state import AgentState
 
 async def final_response_builder(state: AgentState) -> dict:
     state_dict = state.dict()

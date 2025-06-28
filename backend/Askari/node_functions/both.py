@@ -1,5 +1,5 @@
-from Askari.agent_registry import AGENT_REGISTRY
-from Askari.agent_state import AgentState
+from agent_registry import AGENT_REGISTRY
+from agent_state import AgentState
 
 async def both_node(state: AgentState, trace=None) -> dict:
     print("[BOTH NODE] Running all matched agents")

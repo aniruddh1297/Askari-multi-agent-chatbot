@@ -1,8 +1,7 @@
 # main.py
-
 from fastapi import FastAPI
 from pydantic import BaseModel
-from Askari.langraph_builder import run_agent_flow
+from langraph_builder import run_agent_flow
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()

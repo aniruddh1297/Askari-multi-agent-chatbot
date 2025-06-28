@@ -1,5 +1,5 @@
-from Askari.llm_client import call_llm
-from Askari.agent_state import AgentState
+from llm_client import call_llm
+from agent_state import AgentState
 
 async def hr_agent_node(state: AgentState, trace=None) -> dict:
     hr_input = state.hr_message

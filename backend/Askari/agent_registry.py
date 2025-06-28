@@ -1,6 +1,6 @@
 # agent_registry.py
-from Askari.agents.hr_agent import hr_agent_node
-from Askari.agents.it_agent import it_agent_node
+from agents.hr_agent import hr_agent_node
+from agents.it_agent import it_agent_node
 
 AGENT_REGISTRY = {
     "hr": {

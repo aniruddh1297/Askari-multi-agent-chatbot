@@ -1,11 +1,12 @@
 from langgraph.graph import StateGraph
-from Askari.node_functions.router import router_node
-from Askari.node_functions.merge import merge_node
-from Askari.node_functions.final_response import final_response_builder
-from Askari.node_functions.both import both_node
-from Askari.agent_registry import AGENT_REGISTRY
-from Askari.agent_state import AgentState
-from Askari.llm_client import langfuse  # ✅ Import Langfuse instance
+from node_functions.router import router_node
+from node_functions.merge import merge_node
+from node_functions.final_response import final_response_builder
+from node_functions.both import both_node
+from agent_registry import AGENT_REGISTRY
+from agent_state import AgentState
+from llm_client import langfuse 
+
 
 def route_handler(state: AgentState) -> str:
     return state.route or "none"
