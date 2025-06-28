@@ -111,7 +111,7 @@ const App: React.FC = () => {
                       {children}
                     </code>
                   ) : (
-                    <>{children}</> /
+                    <>{children}</> 
                   ),
               }}
             >
