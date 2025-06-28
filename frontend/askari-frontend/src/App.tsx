@@ -38,7 +38,7 @@ const App: React.FC = () => {
       });
 
       const data = await res.json();
-      const reply = data.final_response || "⚠️ No response.";
+      const reply = data.final_response || " No response.";
       const route = data.route || "none";
 
       const routing =
@@ -68,7 +68,7 @@ const App: React.FC = () => {
     } catch (error) {
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: "❌ Error connecting to backend." },
+        { role: "assistant", content: " Error connecting to backend." },
       ]);
     } finally {
       setIsLoading(false);
@@ -111,7 +111,7 @@ const App: React.FC = () => {
                       {children}
                     </code>
                   ) : (
-                    <>{children}</> // ignore block code
+                    <>{children}</> /
                   ),
               }}
             >
