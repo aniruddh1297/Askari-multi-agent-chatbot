@@ -18,7 +18,7 @@ const App: React.FC = () => {
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null); // Auto-focus input
 
-  const BACKEND_URL = "http://localhost:8000/chat";
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
   const handleSend = async () => {
     if (!input.trim()) return;

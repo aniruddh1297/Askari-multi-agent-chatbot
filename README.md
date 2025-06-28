@@ -53,7 +53,7 @@ LANXESS/
 
 ##  Requirements
 
--  Python 3.10+
+-  Python 3.10
 -  Node.js 18+
 
 ---
@@ -88,6 +88,12 @@ LANGFUSE_PUBLIC_KEY=''
 LANGFUSE_HOST=https://cloud.langfuse.com
 ```
 
+###  `.env` Configuration (`frontend/askari-frontend/.env`)
+
+```env
+VITE_BACKEND_URL= BACKEND URL
+```
+
 >  Make sure your Langfuse and OpenRouter keys are valid and billing is active if needed.
 
 ---
@@ -104,8 +110,8 @@ npm install
 ###  Start Backend (with LangGraph)
 
 ```bash
-cd backend
-uvicorn Askari.main:app --reload
+cd backend/Askari
+uvicorn main:app --reload
 ```
 
 ###  Start Frontend (React)
