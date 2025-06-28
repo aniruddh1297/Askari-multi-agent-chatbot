@@ -125,6 +125,54 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 ---
 
+## 🐳 Docker Deployment
+
+### 🔧 Build & Run Backend (FastAPI)
+
+```bash
+# From project root
+docker build -t askari-backend -f backend/Askari/Dockerfile .
+
+# Run backend container on port 8000
+docker run -d -p 8000:8000 --name askari-backend askari-backend
+```
+
+📍 Access API at: [http://localhost:8000](http://localhost:8000)
+
+---
+
+### 🎨 Build & Run Frontend (React/Vite)
+
+```bash
+# Navigate to frontend directory
+cd frontend/askari-frontend
+
+# Build frontend Docker image
+docker build -t askari-frontend .
+
+# Run frontend container on port 3000
+docker run -d -p 3000:80 --name askari-frontend askari-frontend
+```
+
+📍 Access UI at: [http://localhost:3000](http://localhost:3000)
+
+---
+
+### 🔐 Environment Variables
+
+For local development:
+
+- **Backend** uses: `backend/Askari/.env`
+- **Frontend** uses: `frontend/askari-frontend/.env`
+
+For Dockerized deployment:
+
+- Inject env variables using `--env-file`:
+
+```bash
+# Run backend with .env file
+docker run --env-file backend/Askari/.env -p 8000:8000 askari-backend
+```
 ##  Key Highlights
 
 -  **LLM Router**: DeepSeek-powered OpenRouter route classifier
